@@ -1,0 +1,36 @@
+function todo()
+{
+  TODO="$HOME/.TODO"
+  case "$1" in
+    "")
+      cat $TODO;;
+    add)
+      echo "* $*[2,-1]" >> $TODO; cat $TODO;;
+    del)
+      awk "/\*/{if(++h==$*[2])next}1" $TODO > /tmp/TODO.tmp; mv /tmp/TODO.tmp $TODO;;
+  esac
+}
+
+# Assemble Intel 32-bit assembly
+compile()
+{
+    local file
+
+
+    if [[ -z "$1" ]]; then
+        print "No files to process."
+    else
+        if [[ -z `echo $file|grep "\."` ]]; then
+            file="$1"
+        else
+            file="`echo $file|cut -d '.' -f 1`"
+        fi
+        nasm -f elf -g "$file".asm; ld -melf_i386 -o "$file" "$file".o
+    fi
+}
+
+pdfman () {
+    man -t $1 | open -a /Applications/Preview.app -f
+}
+
+# vim: filetype=sh

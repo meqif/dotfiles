@@ -1,0 +1,50 @@
+# Some of this file is mine, some is take from spider's zshrc, and some from
+# guckes's zshrc. Some stuff is totally random. Most of this mutated
+# over time and eventually went to separate files, like xterminus has.
+
+git_prompt_info() {
+  # return the name of the git branch we're on
+  local ref
+  ref=$(git symbolic-ref -q HEAD 2>/dev/null \
+     || git-name-rev --name-only HEAD 2>/dev/null) || return 1
+  echo " on %{$fg_bold[blue]%}${ref#refs/heads/}%{$reset_color%}"
+}
+
+autoload colors ; colors
+
+#PROMPT=$'%{\e[1;32m%}%n@%m%{$reset_color%}$(git_prompt_info)%{\e[0;37m%}:: '
+#PROMPT=$'%{\e[1;32m%}%n%{$reset_color%} at %{$fg_bold[green]%}%m%{$reset_color%} in %{$fg_bold[green]%}%~%{$reset_color%}$(git_prompt_info)\n%{$fg_bold[blue]%}➔%{$reset_color%} '
+PROMPT=$'%{\e[1;32m%}%n@%m%{$reset_color%} in %{$fg_bold[green]%}%.%{$reset_color%}$(git_prompt_info)%{$fg_bold[blue]%} ➔%{$reset_color%} '
+
+# SCREENDIR will screw screen up
+unset SCREENDIR
+
+# Make sure no cores can be dumped while zsh is in charge. I don't know if
+# this limit thing uses ulimit or what, but it seems to work..
+limit coredumpsize 0
+
+# History things
+HISTFILE=$HOME/.zsh/history
+SAVEHIST=500
+HISTSIZE=800
+TMPPREFIX=/tmp
+
+. ~/.zsh/completion
+. ~/.zsh/opts
+. ~/.zsh/colours
+. ~/.zsh/functions
+. ~/.zsh/zstyle
+. ~/.zsh/aliases
+. ~/.zsh/exports
+. ~/.zsh/terms
+
+. ~/.profile
+
+. ~/.zsh/j.sh
+
+autoload -U zmv
+alias mmv='zmv -W'
+
+if [[ -s /Users/meqif/.rvm/scripts/rvm ]] ; then source /Users/meqif/.rvm/scripts/rvm ; fi
+
+eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)

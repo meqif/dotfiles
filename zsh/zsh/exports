@@ -1,0 +1,32 @@
+# Exports
+export HOSTTYPE="$(uname -m)"
+export COLORTERM=yes
+export LINKS_XTERM=screen
+export MAILDIR=$HOME/.Mail/
+export MAIL=$MAILDIR
+export MAILCHECK=0
+export CC=gcc
+export MANPAGER="most"
+export PAGER=less
+export EDITOR=vim
+export BROWSER="firefox"
+
+export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r6
+
+# Add my stuff to $PATH
+export PATH="/usr/local/texlive/2008/bin/universal-darwin/":"$HOME/src/git-wt/bin/":"$HOME/.gem/ruby/1.8/bin":$PATH
+export PATH="/opt/local/bin:/opt/local/sbin:$HOME/src/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/homebrew/sbin":"$HOME/homebrew/bin":$PATH
+export PATH="$HOME/bsrc/bin/sicstus4.1.1/bin":$PATH
+
+# Fixes Savage mouse problems.
+export SDL_VIDEO_X11_DGAMOUSE=0
+
+# Fix sound in SDL apps
+export SDL_AUDIODRIVER="dma"
+
+# ack color
+export ACK_COLOR_MATCH="red"
+
+export RUBYOPT="-rubygems"
+export PYTHONPATH="$HOME/homebrew/lib/python2.6/site-packages:$PYTHONPATH"

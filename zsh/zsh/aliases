@@ -1,0 +1,18 @@
+# Aliases, how I love thee
+if [[ `uname` == "Linux" ]]; then
+    alias ls="ls --color=always"
+else
+    alias ls="ls -G"
+    alias ldd="otool -L"
+fi
+alias halt='sudo /sbin/halt'
+alias reboot='sudo /sbin/reboot'
+alias xinit="xinit -- -nolisten tcp"
+alias ll="ls -lh"
+alias irc="dtach -A ~/.irc weechat-curses"
+alias gzcat="zcat"
+alias groovesalad="mplayer http://somafm.com/groovesalad.pls"
+alias tsf="mplayer http://emdirecto.tsf.pt/tsfdirecto"
+alias mini="ssh 192.168.1.5"
+alias sb="ssh 192.168.1.10"
+alias epic="mvim -S ~/Dropbox/focus.vim"
