@@ -6,6 +6,8 @@ task :install do
 
   linkables.each do |linkable|
     file = linkable.split('/').last.split('.').first
-    `ln -s "$PWD/#{linkable}" "$HOME/.#{file}"`
+    unless File.directory?("#{ENV['HOME']}/.#{file}")
+      `ln -s "$PWD/#{linkable}" "$HOME/.#{file}"`
+    end
   end
 end
