@@ -46,5 +46,3 @@ autoload -U zmv
 alias mmv='zmv -W'
 
 if [[ -s /Users/meqif/.rvm/scripts/rvm ]] ; then source /Users/meqif/.rvm/scripts/rvm ; fi
-
-eval $(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib)
