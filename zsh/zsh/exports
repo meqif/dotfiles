@@ -11,6 +11,12 @@ export PAGER=less
 export EDITOR=vim
 export BROWSER="firefox"
 
+# Using the COPYFILE_DISABLE=true environment variable prevents tar from adding
+# any ._* files to .tar files on Mac OS X.
+if [[ $(uname -s ) == "Darwin" ]]; then
+    export COPYFILE_DISABLE=true
+fi
+
 export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r6
 
 # Add my stuff to $PATH
