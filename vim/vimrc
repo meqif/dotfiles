@@ -190,6 +190,9 @@ autocmd BufReadPre *.svg set filetype=svg
 " Ragel
 au BufRead,BufNewFile *.rl set filetype=ragel
 
+" LESS css
+autocmd BufReadPre *.less set filetype=css
+
 """""""""""""""
 " Keymappings "
 """""""""""""""
