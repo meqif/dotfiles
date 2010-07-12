@@ -23,7 +23,6 @@ export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r6
 export PATH="/usr/local/texlive/2008/bin/universal-darwin/":"$HOME/src/git-wt/bin/":"$HOME/.gem/ruby/1.8/bin":$PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$HOME/src/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/homebrew/sbin":"$HOME/homebrew/bin":$PATH
-export PATH="$HOME/bsrc/bin/sicstus4.1.1/bin":$PATH
 
 # Fixes Savage mouse problems.
 export SDL_VIDEO_X11_DGAMOUSE=0
