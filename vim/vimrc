@@ -17,7 +17,7 @@ if (&term =~ 'linux')
 elseif has("gui_running")
     colorscheme eclm_wombat
     set guifont=Monaco:h12
-    set columns=90
+    set columns=128
 else
 "    set t_Co=256
     set mouse=a
@@ -66,9 +66,9 @@ set showcmd
 set modeline
 set wildmenu
 
-:inoremap ( ()<ESC>i
-:inoremap { {}<ESC>i
-:inoremap [ []<ESC>i
+":inoremap ( ()<ESC>i
+":inoremap { {}<ESC>i
+":inoremap [ []<ESC>i
 
 " Indent, tab, and wrap settings
 ""set noexpandtab
