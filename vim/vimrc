@@ -145,6 +145,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Give me more time for key combos
+set timeout timeoutlen=3000 ttimeoutlen=100
 
 """"""""""""""""
 " Autocommands "
@@ -258,6 +260,9 @@ imap <C-O> <end><cr>
 
 " Easy tabswitch
 map <C-Tab> :tabNext<cr>
+
+" Easy yankring access
+nnoremap <silent> <Leader>p :YRShow<CR>
 
 """"""""""""""""""""""""""""
 " Enable syntax hilighting "
