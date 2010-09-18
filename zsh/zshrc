@@ -34,8 +34,8 @@ TMPPREFIX=/tmp
 . ~/.zsh/colours
 . ~/.zsh/functions
 . ~/.zsh/zstyle
-. ~/.zsh/aliases
 . ~/.zsh/exports
+. ~/.zsh/aliases
 . ~/.zsh/terms
 
 . ~/.profile

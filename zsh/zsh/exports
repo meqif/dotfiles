@@ -23,6 +23,7 @@ export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r6
 export PATH="/usr/local/texlive/2008/bin/universal-darwin/":"$HOME/src/git-wt/bin/":"$HOME/.gem/ruby/1.8/bin":$PATH
 export PATH="/opt/local/bin:/opt/local/sbin:$HOME/src/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/homebrew/sbin":"$HOME/homebrew/bin":$PATH
+export PATH="$HOME/zcov/src":$PATH
 
 # Fixes Savage mouse problems.
 export SDL_VIDEO_X11_DGAMOUSE=0
@@ -35,3 +36,5 @@ export ACK_COLOR_MATCH="red"
 
 export RUBYOPT="-rubygems"
 export PYTHONPATH="$HOME/homebrew/lib/python2.6/site-packages:$PYTHONPATH"
+
+export CLASSPATH=$CLASSPATH:/Users/meqif/homebrew/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
