@@ -15,7 +15,7 @@ if (&term =~ 'linux')
     set nocursorline
     colorscheme darktango
 elseif has("gui_running")
-    colorscheme eclm_wombat
+    colorscheme molokai
     set guifont=Monaco:h12
     set columns=128
 else
