@@ -18,6 +18,9 @@ elseif has("gui_running")
     colorscheme molokai
     set guifont=Monaco:h12
     set columns=128
+    if exists("+guioptions")
+        set guioptions-=T
+    endif
 else
 "    set t_Co=256
     set mouse=a
