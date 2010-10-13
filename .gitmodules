@@ -4,3 +4,6 @@
 [submodule "vim/vim/bundle/unimpaired"]
 	path = vim/vim/bundle/unimpaired
 	url = http://github.com/tpope/vim-unimpaired.git
+[submodule "vim/vim/bundle/surround"]
+	path = vim/vim/bundle/surround
+	url = http://github.com/tpope/vim-surround.git
