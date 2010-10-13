@@ -3,6 +3,13 @@
 " rip this apart and use it to your own nefarious ends.
 
 
+""""""""""""
+" Pathogen "
+""""""""""""
+
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 """"""""""""""""""""""""""""""""""""""""""
 " GUI options, and colorscheme selection "
 """"""""""""""""""""""""""""""""""""""""""
