@@ -281,6 +281,10 @@ nmap <C-Down> ]e
 vmap <C-Up> [egv
 vmap <C-Down> ]egv
 
+" Common command line typos
+cmap W w
+cmap Q q
+
 """"""""""""""""""""""""""""
 " Enable syntax hilighting "
 """"""""""""""""""""""""""""
