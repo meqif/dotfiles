@@ -13,3 +13,6 @@
 [submodule "vim/vim/bundle/snipmate"]
 	path = vim/vim/bundle/snipmate
 	url = http://github.com/msanders/snipmate.vim.git
+[submodule "vim/vim/bundle/repeat"]
+	path = vim/vim/bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
