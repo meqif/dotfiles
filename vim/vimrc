@@ -22,7 +22,8 @@ if (&term =~ 'linux')
     set nocursorline
     colorscheme darktango
 elseif has("gui_running")
-    colorscheme molokai
+"    colorscheme molokai
+    colorscheme xoria256
     set guifont=Monaco:h12
     set columns=128
     if exists("+guioptions")
