@@ -103,6 +103,7 @@ set number
 set nohlsearch
 set ignorecase
 set incsearch
+" Replace all ocurrences in the same line by default
 set gdefault
 set showmatch
 
