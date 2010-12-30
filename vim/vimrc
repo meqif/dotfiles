@@ -10,6 +10,7 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+runtime macros/matchit.vim
 """"""""""""""""""""""""""""""""""""""""""
 " GUI options, and colorscheme selection "
 """"""""""""""""""""""""""""""""""""""""""
@@ -100,7 +101,8 @@ set backspace=eol,start,indent
 set number
 
 " Search options
-set nohlsearch
+"set nohlsearch
+set hlsearch
 set ignorecase
 set incsearch
 " Replace all ocurrences in the same line by default
@@ -185,7 +187,7 @@ autocmd FileType perl map <F6> :!perl %<CR>
 autocmd FileType html,xhtml map <F5> :!firefox %<CR>
 autocmd FileType java map <F6> :!javac %<CR>
 autocmd FileType tex map <F5> :!open "%:r".pdf<CR>
-autocmd FileType tex map <F6> :!pdflatex %<CR>
+autocmd FileType tex map <F6> :!xelatex %<CR>
 
 " MS Word document reading
 autocmd BufReadPre *.doc set ro
@@ -287,12 +289,29 @@ vmap <C-Down> ]egv
 cmap W w
 cmap Q q
 
+" Hide highlighted results with escape
+"nnoremap <esc> :noh<return><esc>
+"nnoremap <esc> :let @/ = ""<return><esc>
+nnoremap <silent> <C-l> :set hlsearch!<CR><C-l>
+
+" Align paragraph: gq
+map <C-a> {gq}
+
 """"""""""""""""""""""""""""
 " Enable syntax hilighting "
 """"""""""""""""""""""""""""
 
 syntax on
 set synmaxcol=160
+
+
+"""""""""""
+" Options "
+"""""""""""
+
+"let delimitMate_matchpairs = "(:),[:],{:}"
+set matchpairs-=<:>
+
 
 " My stuff "
 
