@@ -28,9 +28,18 @@
 [submodule "vim/vim/bundle/pep8"]
 	path = vim/vim/bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
+[submodule "vim/vim/bundle/makegreen"]
+	path = vim/vim/bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen.git
 [submodule "vim/vim/bundle/vim-slim"]
 	path = vim/vim/bundle/vim-slim
 	url = git://github.com/bbommarito/vim-slim.git
 [submodule "vim/vim/bundle/vim-gemfile"]
 	path = vim/vim/bundle/vim-gemfile
 	url = git://github.com/tobiassvn/vim-gemfile.git
+[submodule "vim/vim/bundle/easytags"]
+	path = vim/vim/bundle/easytags
+	url = git://github.com/xolox/vim-easytags.git
+[submodule "vim/vim/bundle/tagbar"]
+	path = vim/vim/bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
