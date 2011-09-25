@@ -31,3 +31,6 @@
 [submodule "vim/vim/bundle/vim-slim"]
 	path = vim/vim/bundle/vim-slim
 	url = git://github.com/bbommarito/vim-slim.git
+[submodule "vim/vim/bundle/vim-gemfile"]
+	path = vim/vim/bundle/vim-gemfile
+	url = git://github.com/tobiassvn/vim-gemfile.git
