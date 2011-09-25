@@ -28,9 +28,6 @@
 [submodule "vim/vim/bundle/pep8"]
 	path = vim/vim/bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
-[submodule "vim/vim/bundle/makegreen"]
-	path = vim/vim/bundle/makegreen
-	url = https://github.com/reinh/vim-makegreen.git
 [submodule "vim/vim/bundle/vim-slim"]
 	path = vim/vim/bundle/vim-slim
 	url = git://github.com/bbommarito/vim-slim.git
