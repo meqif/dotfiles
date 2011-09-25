@@ -22,3 +22,6 @@
 [submodule "vim/vim/bundle/textobj-rubyblock"]
 	path = vim/vim/bundle/textobj-rubyblock
 	url = git://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "vim/vim/bundle/gundo"]
+	path = vim/vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
