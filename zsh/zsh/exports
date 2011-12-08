@@ -15,12 +15,13 @@ if [[ $(uname -s ) == "Darwin" ]]; then
     export COPYFILE_DISABLE=true
 fi
 
-export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r6
+export ANDROID_SDK_ROOT=/Users/meqif/homebrew/Cellar/android-sdk/r12
 
 # Add my stuff to $PATH
-export PATH="/usr/local/texlive/2008/bin/universal-darwin/":"$HOME/src/git-wt/bin/":"$HOME/.gem/ruby/1.8/bin":$PATH
-export PATH="/opt/local/bin:/opt/local/sbin:$HOME/src/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/homebrew/sbin":"$HOME/homebrew/bin":$PATH
+export PATH="$PATH:$HOME/homebrew/share/python:$HOME/homebrew/Cellar/python/2.7.2/bin"
+export PATH="/usr/local/texlive/2010/bin/x86_64-darwin/":"$HOME/src/git-wt/bin/":"$HOME/.gem/ruby/1.8/bin":$PATH
+export PATH="/opt/local/bin:/opt/local/sbin:$HOME/src/bin:$HOME/.cabal/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/zcov/src":$PATH
 
 # Fixes Savage mouse problems.
@@ -35,4 +36,5 @@ export ACK_COLOR_MATCH="red"
 export PYTHONPATH="$HOME/homebrew/lib/python2.6/site-packages:$PYTHONPATH"
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
-export CLASSPATH=$CLASSPATH:/Users/meqif/homebrew/Cellar/clojure-contrib/1.2.0/clojure-contrib.jar
+export CLASSPATH=$CLASSPATH:/Users/meqif/homebrew/Cellar/clojure-contrib/1.2.1/clojure-contrib.jar
+export NODE_PATH="$HOME/homebrew/lib/node_modules"
