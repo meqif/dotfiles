@@ -13,10 +13,17 @@ alias ll="ls -lh"
 alias irc="dtach -A ~/.irc weechat-curses"
 alias gzcat="zcat"
 alias groovesalad="mplayer http://somafm.com/groovesalad.pls"
+alias radar="mplayer mms://stream.radio.com.pt/roli-enc-497"
 alias tsf="mplayer http://emdirecto.tsf.pt/tsfdirecto"
 alias mini="ssh 192.168.1.5"
 alias sb="ssh 192.168.1.10"
 alias epic="mvim -S ~/Dropbox/focus.vim"
+
+alias unload_keyboard="sudo kextunload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
+alias reload_keyboard="sudo kextload /System/Library/Extensions/AppleUSBTopCase.kext/Contents/PlugIns/AppleUSBTCKeyboard.kext/"
+alias bitcoin="/Applications/Bitcoin.app/Contents/MacOS/bitcoin -datadir=/Volumes/WALLET/Bitcoin/"
+
+alias reticulate_splines="cat /dev/urandom | hexdump -C | grep \"ca fe\""
 
 brew_prefix=`brew --prefix`
 alias base64="$brew_prefix/bin/gbase64"
