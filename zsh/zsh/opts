@@ -1,4 +1,5 @@
 # zsh Options. Big long lovely way of setting them.
+## glob_subst was evil
 
 setopt                       \
      NO_all_export           \
