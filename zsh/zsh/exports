@@ -32,7 +32,6 @@ export SDL_AUDIODRIVER="dma"
 # ack color
 export ACK_COLOR_MATCH="red"
 
-export RUBYOPT="-rubygems"
 export PYTHONPATH="$HOME/homebrew/lib/python2.6/site-packages:$PYTHONPATH"
 export PYTHONSTARTUP="$HOME/.pythonrc"
 
