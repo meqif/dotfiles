@@ -2,13 +2,35 @@
 " from rezza's config and various sources around the net. Feel free to
 " rip this apart and use it to your own nefarious ends.
 
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'xolox/vim-easytags'
+Bundle 'tpope/vim-fugitive.git'
+Bundle 'sjl/gundo.vim'
+Bundle 'tpope/vim-liquid'
+Bundle 'pep8'
+Bundle 'tpope/vim-repeat'
+Bundle 'msanders/snipmate.vim'
+Bundle 'ervandew/supertab'
+Bundle 'tpope/vim-surround'
+Bundle 'majutsushi/tagbar'
+Bundle 'kana/vim-textobj-indent'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'kana/vim-textobj-user'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'tobiassvn/vim-gemfile'
+Bundle 'bbommarito/vim-slim'
+Bundle 'Rip-Rip/clang_complete'
 
 """"""""""""
 " Pathogen "
 """"""""""""
 
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+"call pathogen#runtime_append_all_bundles()
+"call pathogen#helptags()
 
 runtime macros/matchit.vim
 """"""""""""""""""""""""""""""""""""""""""
@@ -331,3 +353,20 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 ":au BufWinEnter * let w:m1=matchadd('Search', '\%<81v.\%>77v', -1)
 ":au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+
+" Complete options (disable preview scratch window)
+set completeopt=menu,menuone,longest
+" Limit popup menu height
+set pumheight=15
+
+" SuperTab option for context aware completion
+let g:SuperTabDefaultCompletionType = "context"
+
+" Disable auto popup, use <Tab> to autocomplete
+"let g:clang_complete_auto = 0
+" Show clang errors in the quickfix window
+let g:clang_complete_copen = 1
+
+" Use Homebrew's libclang
+let g:clang_use_library = 1
+let g:clang_library_path = "/Users/meqif/homebrew/Cellar/llvm/3.0/lib"
