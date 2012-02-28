@@ -24,7 +24,8 @@ precmd () {
 }
 
 # This sets the window title to the last run command.
-[[ -t 1 ]] || return
+# XXX: Might cause blank output in curl
+[[ -t 1 && `uname` -ne "Darwin" ]] || return
 case $TERM in
   *xterm*|*rxvt*|(dt|k|E|a)term)
     preexec () {
